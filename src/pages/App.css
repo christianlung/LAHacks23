@@ -1,0 +1,11 @@
+/*.left{
+  display: flex;
+  justify-content: flex-start;
+  float: left;
+}
+
+.right{
+  display: flex;
+  justify-content: flex-end;
+  float: right;
+}*/
