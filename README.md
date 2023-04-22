@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # LAHacks23
 =======
 # Getting Started with Create React App
