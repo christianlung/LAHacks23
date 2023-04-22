@@ -18,20 +18,6 @@ function App() {
         <Videos/>
       </Grid>
     </Grid>
-    // <div className="App">
-    //   <div className="left">
-    //     <Videos/>
-    //   </div>
-    //   <div className="right">
-    //     <Videos/>
-    //   </div>
-    //   <div className="left">
-    //     <Videos/>
-    //   </div >
-    //   <div className="right">
-    //     <Videos/>
-    //   </div>
-    // </div>
   );
 }
 
