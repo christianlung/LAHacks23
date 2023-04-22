@@ -1,4 +1,6 @@
 .picture{
-    width: 685px;
-    padding: 10px;
+    width: 100%;
+    /* width: auto; */
+    /* height: 100vh; */
+    border-radius: 10px;
 }

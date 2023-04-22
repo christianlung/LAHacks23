@@ -1,5 +1,6 @@
 import Videos from './components/videos.js'
 import Grid from "@material-ui/core/Grid";
+import NavBar from './components/navbar.js';
 import './App.css';
 import { useEffect, useRef, useState} from 'react';
 import { addDoc, getDocs, collection } from "@firebase/firestore"
@@ -90,20 +91,27 @@ function App() {
   //   </div>
   // );
   return (
-    <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-      <Grid item xs={6}>
-        <Videos/>
-      </Grid>
-      <Grid item xs={6}>
-        <Videos/>
-      </Grid>
-      <Grid item xs={6}>
-        <Videos/>
-      </Grid>
-      <Grid item xs={6}>
-        <Videos/>
-      </Grid>
-    </Grid>
+    <div>
+       <NavBar/>
+      <div className="container">
+        <Grid container spacing={1}>
+          <Grid item xs={6}>
+            <Videos/>
+          </Grid>
+          <Grid item xs={6}>
+            <Videos/>
+          </Grid>
+          <Grid item xs={6}>
+            <Videos/>
+          </Grid>
+          <Grid item xs={6}>
+            <Videos/>
+          </Grid>
+        </Grid>
+      </div>
+    </div>
+   
+ 
   );
 
 }
