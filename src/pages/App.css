@@ -1,4 +1,4 @@
-/*.left{
+/* .left{
   display: flex;
   justify-content: flex-start;
   float: left;
@@ -8,4 +8,11 @@
   display: flex;
   justify-content: flex-end;
   float: right;
-}*/
+}  */
+
+.container{
+  color: black;
+  background-color: black;
+  padding-left: 1%;
+  padding-right: 1%;
+}

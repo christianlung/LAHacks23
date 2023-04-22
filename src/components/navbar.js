@@ -1,28 +1,20 @@
 // components/Navbar.tsx
 import React from "react";
 import Link from "next/link";
+import { Button } from '@mui/material';
 
-function Navbar() {
+function Navbar(){
   return (
-    <div className="navbar bg-base-100">
-      <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">My Website</a>
-      </div>
-      <div className="flex-none">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contact</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-        </ul>
-      </div>
-    </div>
+      <nav className="myNav">
+          <img className="logo" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"/>
+          <h1 className="title">FEED</h1>
+          <ul>
+              <li><a href="#">Upload</a></li>
+              {/* <li><a href="#">Projects</a></li> */}
+          </ul>
+          <button>Login</button>
+      </nav>
   );
-};
+}
 
 export default Navbar;
