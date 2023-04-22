@@ -4,7 +4,18 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Videos/>
+      <div className="left">
+        <Videos/>
+      </div>
+      <div className="right">
+        <Videos/>
+      </div>
+      <div className="left">
+        <Videos/>
+      </div >
+      <div className="right">
+        <Videos/>
+      </div>
     </div>
   );
 }

@@ -1,11 +1,10 @@
 import React from 'react';
+import './videos.css';
 import UCLA from '../media/UCLA.jpg';
 function videos(){
     return(
         <div>
-            <span>
-                <img className = "test" src={UCLA} alt="Image failed to load"/>
-            </span>
+            <img className = "picture" src={UCLA} alt="Image failed to load"/>
         </div>
     );
 }
