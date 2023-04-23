@@ -1,0 +1,10 @@
+.container {
+    min-height: 100vh;
+    position: relative;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
