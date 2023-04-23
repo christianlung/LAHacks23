@@ -36,17 +36,17 @@ function Navbar() {
   // }
 
   return (
-      <Grid container justifyContent={"space-between"} alignItems={"center"}>
+      <Grid container justifyContent={"space-between"} alignItems={"center"} backgroundColor={"black"} color={"white"} padding={"15px"}>
         <Grid item sx={3} paddingLeft="10px">
-          <HomeIcon width="25px" height="25px" sx={{borderRadius: "10px"}}/>
+          <HomeIcon width="30px" height="30px" sx={{borderRadius: "10px"}}/>
           <PlaceIcon width="25px" height="25px"/>
           </Grid>
           <Grid item sx={6}>
-            <Typography variant="h6" fontFamily="garamond">off the map</Typography>
+            <Typography variant="h6" fontFamily="garamond" fontSize={"30px"}>ROAM.io</Typography>
           </Grid>
           <Grid item sx={3} paddingRight="10px">
-            <CloudUploadIcon width="25px" height="25px"/>
-            <AccountCircleIcon width="25px" height="25px" />
+            {/* <CloudUploadIcon width="30px" height="30px"/> */}
+            <AccountCircleIcon width="30px" height="30px" />
           </Grid>
       </Grid>
   );
