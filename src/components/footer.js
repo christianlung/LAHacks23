@@ -1,27 +1,19 @@
 // components/Footer.tsx
 import React from "react";
 import Link from "next/link";
+import { Grid, Typography } from "@mui/material";
+import github from "../../public/github.png";
 
 function Footer() {
   return (
-    <div className="navbar bg-base-100">
-      <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">My Website</a>
-      </div>
-      <div className="flex-none">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contact</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <Grid container direction="column" justifyContent={"space-between"} alignItems={"center"}>
+      <Grid item sx={3} paddingLeft="10px">
+        <Typography>Made with ❤️ at LAHacks 2023</Typography>
+      </Grid>
+      {/* <Grid item sx={6}>
+        <img src={github} alt="Logo" width="10" height="10" href="https://github.com/christianlung/LAHacks23"/>
+      </Grid> */}
+    </Grid>
   );
 };
 

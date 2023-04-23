@@ -7,18 +7,18 @@ function Landing() {
     const [val, setVal] = useState("");
 
     return (
-        <Grid container direction="column" justifyContent={"center"} alignItems={"center"} >
+        <Grid container direction="column" spacing={8} justifyContent="space-between" alignItems="center">
             <Grid item>
                 <Typography variant="h3">off the map</Typography>
             </Grid>
             <Grid item>
-                <TextField id="outlined-basic" variant="outlined" value={val}
+                <TextField id="outlined-basic" variant="outlined" helperText="Location" value={val} onChange={(e) => setVal(e.target.value)}
                  InputProps={{
-                    startAdornment: <InputAdornment position="start"><MyLocationIcon /></InputAdornment>
+                    startAdornment: <InputAdornment position="start"><MyLocationIcon/></InputAdornment>
                   }} />
             </Grid>
             <Grid item>
-                <Button variant="contained" color="primary">Go</Button>
+                <Button variant="contained" color="primary">Go!</Button>
             </Grid>
 
         </Grid>
