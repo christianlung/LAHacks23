@@ -28,7 +28,7 @@ function App() {
       <div className="App">
       <h1>Video List</h1>
       <button onClick={fetchVideos}>Refresh Videos</button>
-      <div style={{backgroundColor: 'black'}}>
+      <div>
         {videos.map((video) => (
           <div key={video.id} style={{margin: "1rem"}}>
             <h3>{video.title}</h3>
