@@ -1,5 +1,4 @@
 import React from 'react';
-import './videos.css';
 import UCLA from '../media/UCLA.jpg';
 // import street from '../media/street.jpg';
 function videos(){
