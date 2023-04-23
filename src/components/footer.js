@@ -6,7 +6,7 @@ import github from "../../public/github.png";
 
 function Footer() {
   return (
-    <Grid container direction="column" justifyContent={"space-between"} alignItems={"center"} backgroundColor={"black"}>
+    <Grid container direction="column" justifyContent={"space-between"} alignItems={"center"}>
       <Grid item sx={3} paddingLeft="10px">
         <Typography>Made with ❤️ at LAHacks 2023</Typography>
       </Grid>
