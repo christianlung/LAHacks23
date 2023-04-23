@@ -4,6 +4,7 @@ import { firestore } from "../firebase_setup/firebase.js"
 import { CircularProgress, Grid} from '@mui/material';
 import Router from "next/router"
 
+
 function App() {
   const fetchVideos = async () => {
     await getDocs(collection(firestore, "videos"))
@@ -22,7 +23,9 @@ function App() {
   }, [])
 
   if (videos.length === 0) {
-    return <CircularProgress />
+    return(<Grid backgroundColor="black" paddingBottom={"50%"}>
+            <CircularProgress />
+          </Grid>);
   } else {
     return (
       <div className="App">
